@@ -3,7 +3,24 @@
     <style name="Base.Theme.NotesApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/red</item>
+    </style>
+    
+<!--     for progressBar color -->
+    <style name="ProgressBar">
+        <item name="colorSecondary">@color/red</item>
+    </style>
+
+    <!--     for delete Sheet style color -->
+    <style name="BottomSheetStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+    </style>
+
+    <style name="Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
     </style>
 
     <style name="Theme.NotesApplication" parent="Base.Theme.NotesApplication" />
+
+
 </resources>
