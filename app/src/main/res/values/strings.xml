@@ -7,4 +7,7 @@
     <string name="dev_name">By\n Jubayed Alam</string>
     <string name="floating_button">this is a add floating button</string>
     <string name="save_note">this is note save button</string>
+    <string name="question_exit">Are you sure want to delete \n This note?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
 </resources>

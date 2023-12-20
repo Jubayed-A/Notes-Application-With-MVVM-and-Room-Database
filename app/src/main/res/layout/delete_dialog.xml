@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Are you sure want to delete \n This note?"
+        android:text="@string/question_exit"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/black"
         android:gravity="center"
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NO"
+        android:text="@string/no"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/black"
         android:layout_margin="10dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
-        android:text="YES"
+        android:text="@string/yes"
         android:background="@drawable/yes_btn"
         android:padding="10dp"
         android:layout_margin="10dp"
