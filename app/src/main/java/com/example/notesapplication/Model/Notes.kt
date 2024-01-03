@@ -15,5 +15,4 @@ class Notes(
     var notes: String,
     var date: String,
     var priority: String
-
 )
