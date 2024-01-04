@@ -15,7 +15,7 @@
         android:background="?attr/colorPrimary" />
 
 
-
+<!--frame layout added-->
     <fragment
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
