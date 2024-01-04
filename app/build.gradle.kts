@@ -25,7 +25,7 @@ android {
                 "proguard-rules.pro"
             )
         }
-
+        // view-binging added
         buildFeatures{
             viewBinding = true
         }
