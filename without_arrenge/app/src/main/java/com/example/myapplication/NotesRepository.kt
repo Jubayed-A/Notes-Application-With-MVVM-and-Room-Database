@@ -1,22 +1,20 @@
-package com.example.notesapplication.Repository
+package com.example.myapplication
 
 import androidx.lifecycle.LiveData
-import com.example.notesapplication.Dao.NotesDao
-import com.example.notesapplication.Model.Notes
 
 class NotesRepository(private val dao: NotesDao) {
 
-    fun getAllNotes() : LiveData<List<Notes>>{
+    fun getAllNotes() : LiveData<List<Notes_Entity>> {
         return dao.getNotes()
     }
 
-    fun insertNotes(notes: Notes){
+    fun insertNotes(notes: Notes_Entity){
         dao.insertNotes(notes)
     }
     fun deleteNotes(id: Int){
         dao.deleteNotes(id)
     }
-    fun updateNote(notes: Notes){
+    fun updateNote(notes: Notes_Entity){
         dao.updateNotes(notes)
     }
 

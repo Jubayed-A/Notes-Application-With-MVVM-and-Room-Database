@@ -1,6 +1,7 @@
-package com.example.notesapplication.ui.Fragments
+package com.example.myapplication.ui.framgment
 
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Note
 import android.text.format.DateFormat
 import android.view.LayoutInflater
 import android.view.View
@@ -8,19 +9,19 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.notesapplication.Model.Notes
-import com.example.notesapplication.R
-import com.example.notesapplication.ViewModel.NotesViewModel
-import com.example.notesapplication.databinding.FragmentNoteAddBinding
+import androidx.lifecycle.ViewModelProvider
+import com.example.myapplication.NotesViewModel
+import com.example.myapplication.Notes_Entity
+import com.example.myapplication.databinding.FragmentNoteAddBinding
+import com.example.myapplication.R
+
 import java.util.Date
 
 class NoteAddFragment : Fragment() {
 
     private lateinit var binding: FragmentNoteAddBinding
     private var priority: String = "1"
-    private val viewModel : NotesViewModel by viewModels()
-
-
+    private lateinit var viewModel : NotesViewModel
 
 
     override fun onCreateView(
@@ -69,7 +70,7 @@ class NoteAddFragment : Fragment() {
         val date: CharSequence = DateFormat.format("MMMM d, yyyy ", d.time)
         //        Log.e("hello", "createNotes : $date") // to check in logcat date working or not
 
-        val data = Notes(
+        val data = Notes_Entity(
             null,
             title = title,
             subTitle = subTitle,

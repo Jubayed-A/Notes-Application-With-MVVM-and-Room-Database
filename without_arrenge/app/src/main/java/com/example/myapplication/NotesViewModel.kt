@@ -1,11 +1,8 @@
-package com.example.notesapplication.ViewModel
+package com.example.myapplication
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.example.notesapplication.Database.NotesDatabase
-import com.example.notesapplication.Model.Notes
-import com.example.notesapplication.Repository.NotesRepository
 
 class NotesViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -16,17 +13,17 @@ class NotesViewModel(application: Application) : AndroidViewModel(application) {
         repository = NotesRepository(dao)
     }
 
-    fun addNotes(notes: Notes) {
+    fun addNotes(notes: Notes_Entity) {
         repository.insertNotes(notes)
     }
 
-    fun getNotes(): LiveData<List<Notes>> = repository.getAllNotes()
+    fun getNotes(): LiveData<List<Notes_Entity>> = repository.getAllNotes()
 
     fun deleteNotes(id: Int) {
         repository.deleteNotes(id)
     }
 
-    fun updateNotes(notes: Notes) {
+    fun updateNotes(notes: Notes_Entity) {
         repository.updateNote(notes)
     }
 

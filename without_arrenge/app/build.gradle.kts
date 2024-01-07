@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.notesapplication"
+    namespace = "com.example.myapplication"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.notesapplication"
+        applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -25,11 +25,9 @@ android {
                 "proguard-rules.pro"
             )
         }
-        // view-binging added
         buildFeatures{
             viewBinding = true
         }
-
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -68,7 +66,4 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation ("androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2")
     implementation ("androidx.activity:activity-ktx:1.8.2")
-
-
-
 }

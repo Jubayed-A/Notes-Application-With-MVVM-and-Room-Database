@@ -1,12 +1,10 @@
-package com.example.notesapplication.Model
-
+package com.example.myapplication
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "Notes")
-class Notes(
-
+@Entity(tableName = "Notes_Entity")
+class Notes_Entity(
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null,
     var title: String,

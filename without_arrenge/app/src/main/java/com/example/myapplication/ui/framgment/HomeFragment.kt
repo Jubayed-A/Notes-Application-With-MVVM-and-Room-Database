@@ -1,4 +1,4 @@
-package com.example.notesapplication.ui.Fragments
+package com.example.myapplication.ui.framgment
 
 import android.os.Binder
 import android.os.Bundle
@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.example.notesapplication.R
-import com.example.notesapplication.databinding.FragmentHomeBinding
+import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentHomeBinding
+
 
 
 class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentHomeBinding
+    lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
