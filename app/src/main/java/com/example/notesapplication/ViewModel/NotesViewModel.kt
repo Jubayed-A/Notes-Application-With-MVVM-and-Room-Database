@@ -9,7 +9,7 @@ import com.example.notesapplication.Repository.NotesRepository
 
 class NotesViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var repository : NotesRepository
+    private val repository:NotesRepository
 
     init {
         val dao = NotesDatabase.getDatabaseInstance(application).myNotesDao()
@@ -22,7 +22,7 @@ class NotesViewModel(application: Application) : AndroidViewModel(application) {
 
     fun getNotes(): LiveData<List<Notes>> = repository.getAllNotes()
 
-    fun deleteNotes(id: Int) {
+    fun deleteNotes(id:Int) {
         repository.deleteNotes(id)
     }
 

@@ -12,7 +12,7 @@ import com.example.notesapplication.Model.Notes
 interface NotesDao {
 
     @Query("SELECT * FROM Notes")
-    fun getNotes(): LiveData<List<Notes>>
+    fun getNotes() : LiveData<List<Notes>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertNotes(notes: Notes)
