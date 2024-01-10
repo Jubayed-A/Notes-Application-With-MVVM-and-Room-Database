@@ -103,7 +103,7 @@ class NoteEditFragment : Fragment() {
             priority = priority
         )
         // Update the note in the ViewModel
-        viewModel.addNotes(data)
+        viewModel.updateNotes(data)
 
         // Show success message and navigate to HomeFragment
         Toast.makeText(context, "Note Update Successfully", Toast.LENGTH_SHORT).show()
