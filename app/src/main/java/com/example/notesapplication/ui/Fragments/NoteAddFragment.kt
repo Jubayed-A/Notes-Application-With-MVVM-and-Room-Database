@@ -3,9 +3,11 @@ package com.example.notesapplication.ui.Fragments
 import android.os.Bundle
 import android.text.format.DateFormat
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
@@ -28,6 +30,12 @@ class NoteAddFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentNoteAddBinding.inflate(layoutInflater, container, false)
+
+
+        // Set up toolbar back button
+        (requireActivity() as AppCompatActivity).supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+        }
 
         // set default priority color
         binding.pGreen.setImageResource(R.drawable.done_icon)
@@ -66,21 +74,37 @@ class NoteAddFragment : Fragment() {
 
         val d = Date()
         val date: CharSequence = DateFormat.format("MMMM d, yyyy ", d.time)
-        //        Log.e("hello", "createNotes : $date") // to check in logcat date working or not
 
-        val data = Notes(
-            null,
-            title = title,
-            subTitle = subTitle,
-            notes = notes,
-            date = date.toString(),
-            priority = priority
-        )
-        viewModel.addNotes(data)
+        // Check if the title is empty
+        if (title.isEmpty()) {
+            Toast.makeText(context, "Please input a title", Toast.LENGTH_SHORT).show()
+        } else {
+            val data = Notes(
+                null,
+                title = title,
+                subTitle = subTitle,
+                notes = notes,
+                date = date.toString(),
+                priority = priority
+            )
+            viewModel.addNotes(data)
 
-        Toast.makeText(context, "Note Create Successfully", Toast.LENGTH_SHORT).show()
-        Navigation.findNavController(it!!).navigate(R.id.action_noteAddFragment_to_homeFragment)
+            Toast.makeText(context, "Note Create Successfully", Toast.LENGTH_SHORT).show()
+            Navigation.findNavController(it!!).navigate(R.id.action_noteAddFragment_to_homeFragment)
+        }
+    }
 
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Handle back button press
+                requireActivity().onBackPressed()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 
