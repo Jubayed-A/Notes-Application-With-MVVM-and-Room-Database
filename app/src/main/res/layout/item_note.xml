@@ -7,7 +7,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,6 +17,7 @@
 
 
         <View
+            android:id="@+id/notePriority"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/red_dot"
@@ -33,6 +34,7 @@
 
 
             <TextView
+                android:id="@+id/noteTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
@@ -41,6 +43,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/noteSubTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -50,6 +53,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/noteDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
