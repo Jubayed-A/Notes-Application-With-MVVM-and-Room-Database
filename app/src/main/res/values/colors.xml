@@ -6,5 +6,7 @@
     <color name="yellow">#FFEB3B</color>
     <color name="green">#4CAF50</color>
     <color name="gray">#C7C7C7</color>
+    <color name="hint_black">#000000</color>
+    <color name="delete_pop_up">#000000</color>
 
 </resources>
