@@ -23,7 +23,7 @@
             android:background="@drawable/et_txt_shape"
             android:hint="Title..."
             android:padding="15dp"
-            android:textColorHint="@color/black" />
+            android:textColorHint="@color/hint_black" />
 
         <!--    Title code here    -->
         <EditText
@@ -34,7 +34,7 @@
             android:background="@drawable/et_txt_shape"
             android:hint="Sub Title..."
             android:padding="15dp"
-            android:textColorHint="@color/black" />
+            android:textColorHint="@color/hint_black" />
 
         <!--    priority  code here    -->
         <LinearLayout
@@ -77,7 +77,7 @@
             android:gravity="start"
             android:hint="Note..."
             android:padding="15dp"
-            android:textColorHint="@color/black" />
+            android:textColorHint="@color/hint_black" />
 
     </LinearLayout>
 
