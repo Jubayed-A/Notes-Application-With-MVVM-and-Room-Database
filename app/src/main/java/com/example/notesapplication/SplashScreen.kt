@@ -10,7 +10,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-// handle how many m.s. wait 
+// handle how many m.second wait 
         Handler().postDelayed({
             val intentMain = Intent(this, MainActivity::class.java)
             startActivity(intentMain)

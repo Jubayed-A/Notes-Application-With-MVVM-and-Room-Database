@@ -18,8 +18,9 @@
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text="@string/question_exit"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textColor="@color/white"
+        android:textSize="18sp" 
+/>
 
     <TextView
         android:id="@+id/dialogNo"
