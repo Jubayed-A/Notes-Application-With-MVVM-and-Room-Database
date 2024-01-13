@@ -6,7 +6,7 @@
 
 Welcome to the Notes App project, This is a simple Android application for taking notes, built using the MVVM architecture and Room Database.
 
-**APK:** 
+**APK: https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/releases/download/v1.0/notes_app.apk** 
 
 ## Demo
 <div align="center"
