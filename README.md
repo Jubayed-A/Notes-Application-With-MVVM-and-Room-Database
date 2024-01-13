@@ -6,17 +6,18 @@
 
 Welcome to the Notes App project, This is a simple Android application for taking notes, built using the MVVM architecture and Room Database.
 
-**APK:** https://files.fm/f/ny5cf2buw8
+**APK:** 
 
 ## Demo
 <div align="center"
   style="display:flex; flex-wrap:wrap;">
-  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/b89007c6-5a80-4b6d-a32f-77867b0a8c82" style="flex:1; margin:5px;" height="450">
-  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/cf52ea89-39a6-41ea-9af0-9926b9e87571" style="flex:1; margin:5px;" height="450">
+  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/95514bb6-1a6d-4a5c-ae67-9fc8eeb42b9f" style="flex:1; margin:5px;" height="450">
+  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/9326468e-e77d-45de-8e1b-f4577c5b5f51" style="flex:1; margin:5px;" height="450">
 </div>
 
 ## Screenshots
-<div style="display:flex; flex-wrap:wrap;">
+<div align="center"
+  style="display:flex; flex-wrap:wrap;">
   <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/540aad36-3e6e-4918-8a62-e8dbdda170ec" style="flex:1; margin:5px;" height="450">
   <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/93659b69-2ba0-48a1-8298-7e86c45e4667" style="flex:1; margin:5px;" height="450">
   <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/58497113-350f-4e8e-8d9c-2a6766ed45e4" style="flex:1; margin:5px;" height="450">
