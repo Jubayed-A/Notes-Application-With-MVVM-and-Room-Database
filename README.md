@@ -48,6 +48,31 @@ We've embraced modern technologies to make this app robust and efficient:
 - Navigation components with Safe Args Kotlin-Parcelize.
 - Pagination (manual implementation).
 
+## Getting Started
+1. Clone the Repository:
+
+### Clone the Repository:
+git clone: https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database.git
+
+2. Open in Android Studio:
+- Open Android Studio and choose "Open an existing Android Studio project."
+- Navigate to the cloned project directory and select it.
+3. Run the App:
+- Connect your Android device or use an emulator.
+- Click on the "Run" button in Android Studio to build and run the application.
+- 
+### Dependencies
+- Android Architecture Components: Using LiveData and ViewModel for efficient UI updates and maintaining UI-related data.
+
+- Room Database: A robust and efficient SQLite object mapping library.
+
+- Navigation Component: Simplifies the implementation of navigation within the app.
+
+### Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to help improve this project.
+
+### License
+This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
 
 
 ### Project Status
